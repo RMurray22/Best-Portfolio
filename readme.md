@@ -1,0 +1,1 @@
+This is my portfolio that shows off all the major projects and assignments for the duration of the bootcamp.

@@ -1,27 +1,35 @@
 body {
-font-family: 'Times New Roman', Times, serif;
+    font-family: 'Times New Roman', Times, serif;
 }
+
 .header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #2a607c;
     color: #ffffff;
+    display: flex;
 }
+
 .header h1 {
     display: inline-block;
     font-size: 48px;
 }
-.header div{
+
+.header div {
     padding-top: 15px;
     padding-top: 20px;
     float: right;
     font-family: 'Times New Roman', Times, serif;
     font-size: 20px;
+    margin-top: auto;
+    margin-left: 250px;
 
 }
-.header div ul{
+
+.header div ul {
     list-style-type: none;
 }
+
 .header div ul li {
     display: inline-block;
     margin-left: 25px;
@@ -31,6 +39,73 @@ font-family: 'Times New Roman', Times, serif;
 nav {
     display: flex;
     background-color: burlywood;
-color: white;
-font-size: 150%;
+    color: black;
+    font-size: 150%;
 }
+
+.header img {
+    float: left;
+    margin-top: 25px;
+
+}
+
+.article {
+    font-size: 150%;
+}
+
+input[type=text],
+select,
+textarea {
+    width: 75%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical
+}
+
+
+input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+@media screen and (max-width: 768px) {
+
+    main,
+    nav {
+        flex-direction: column;
+    }
+
+    aside {
+        order: 2;
+    }
+
+    header {
+        background: #772014;
+    }
+
+    nav,
+    footer {
+        background-color: #bb8588;
+    }
+}
+    
